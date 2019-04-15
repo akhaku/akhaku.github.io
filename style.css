@@ -12,10 +12,23 @@ body {
 .container {
   margin: 0 auto;
   background-color: #FBFBEF;
-  width: 896px;
+  width: 100%;
+  box-sizing: border-box;
   border-left: 2px solid black;
   border-right: 2px solid black;
   height: 100%;
+}
+
+@media screen and (min-width: 920px) {
+  .container {
+    width: 896px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 720px;
+  }
 }
 
 .content {
